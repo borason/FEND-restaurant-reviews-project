@@ -1,4 +1,4 @@
-const cacheName = 'v1';
+const cacheName = 'fend-restaurant-v1';
 const cacheFiles = [
     '/',
     '/index.html',
@@ -23,7 +23,7 @@ const cacheFiles = [
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('v1').then((cache) => {
+        caches.open('fend-restaurant-v1').then((cache) => {
             cache.addAll(cacheFiles);
         })
     );

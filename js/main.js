@@ -6,11 +6,11 @@ var markers = []
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/sw.js')
-           .catch(function() {
-            console.log('service worker not registered');
-           })
-           .then(function() { console.log("Service Worker Registered"); });
+    .register('/sw.js')
+    .catch(function() {
+      console.log('service worker not registered');
+    })
+    .then(function() { console.log("Service Worker Registered"); });
 }
 
 /**
