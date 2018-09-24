@@ -11,9 +11,9 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+    /*max-width: 1500px;*/
+/*    margin-left: auto;
+    margin-right: auto;*/
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -79,12 +79,32 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 17px;
+  margin: 0;
+  width: calc(50% - 80px);
+}
+
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 /* Display list items side by side */
@@ -201,6 +221,9 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.inside {
+  width: 100%;
+}
 .inside header {
   position: fixed;
   top: 0;

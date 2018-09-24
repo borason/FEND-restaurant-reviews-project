@@ -84,7 +84,7 @@ initMap = () => {
   self.newMap = L.map('map', {
         center: [40.722216, -73.987501],
         zoom: 12,
-        scrollWheelZoom: false
+        scrollWheelZoom: false,
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiY2x1Y2ttdWNrIiwiYSI6ImNqbHh5MTB0NjBnNjQzcG54czdzeXNxM3MifQ.OFUZyeUhQXxGAAlBDwEmeQ',
@@ -96,6 +96,7 @@ initMap = () => {
   }).addTo(newMap);
 
   updateRestaurants();
+  document.getElementById("map").setAttribute("tabindex", "-1");
 }
 /* window.initMap = () => {
   let loc = {
@@ -187,7 +188,6 @@ createRestaurantHTML = (restaurant) => {
   li.append(address);
 
   const more = document.createElement('a');
-  more.tabIndex = '3';
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
@@ -202,6 +202,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
+    // marker.attr('tabindex', -1);
     marker.on("click", onClick);
     function onClick() {
       window.location.href = marker.options.url;
@@ -221,3 +222,4 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+document.querySelectorAll('.leaflet-pane').setAttribute("tabindex", "-1");
