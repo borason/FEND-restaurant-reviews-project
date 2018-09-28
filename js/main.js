@@ -85,6 +85,7 @@ initMap = () => {
         center: [40.722216, -73.987501],
         zoom: 12,
         scrollWheelZoom: false,
+        keyboard: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiY2x1Y2ttdWNrIiwiYSI6ImNqbHh5MTB0NjBnNjQzcG54czdzeXNxM3MifQ.OFUZyeUhQXxGAAlBDwEmeQ',
@@ -221,5 +222,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-
-document.querySelectorAll('.leaflet-pane').setAttribute("tabindex", "-1");
