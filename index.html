@@ -27,12 +27,15 @@
         <select tabindex='0' id="neighborhoods-select" role="dropdown" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <label id="neighborhoods-select">neighborhood</label>
+        <div id="neighborhoodsdiv">
+        <label id="neighborhoods-select">Select Neighborhood</label>
+        </div>
         <select tabindex="0" id="cuisines-select" role="dropdown" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
-        <label id="cuisines-select">cuisine</label>
-
+        <div id="cuisinediv">
+        <label id="cuisines-select">Select Cuisine</label>
+        </div>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
