@@ -30,7 +30,7 @@ a:hover, a:focus {
 }
 
 img {
-    max-width: 33%;
+    max-width: 100%;
     max-height: 33%;
     padding-top: 5px;
     border: 5px solid white;
@@ -150,6 +150,7 @@ a.skip:hover {
   line-height: 1;
   margin: 0 20px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .filter-options select {
   background-color: white;
@@ -163,6 +164,19 @@ a.skip:hover {
   width: 200px;
 }
 
+.filter-div {
+  width: 200px;
+  padding: 0 15px;
+}
+
+.select-label {
+  font-size: 1rem;
+  color: white;
+}
+#cuisines-select {
+  /*padding-bottom: 10px;
+  margin-bottom: 10px;*/
+}
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
@@ -176,6 +190,7 @@ a.skip:hover {
 }
 #restaurants-list li {
   background-color: #fff;
+
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;

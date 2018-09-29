@@ -13,7 +13,7 @@
     <a href="#filters" class="skip" tabindex="1">Skip past map content</a>
   <header>
     <nav>
-      <h1><a href="/" aria-labelledby="Home">Restaurant Reviews</a></h1>
+      <h1><a href="/" aria-labelledby="Home" title="Home Page">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
@@ -24,18 +24,14 @@
     <section id="filters">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select tabindex='0' id="neighborhoods-select" role="dropdown" name="neighborhoods" onchange="updateRestaurants()">
+        <select tabindex='0' id="neighborhoods-select" role="dropdown" name="neighborhoods" onchange="updateRestaurants()" title="Neighborhoods Dropdown Menu">
           <option value="all">All Neighborhoods</option>
         </select>
-        <div id="neighborhoodsdiv">
-        <label id="neighborhoods-select">Select Neighborhood</label>
-        </div>
-        <select tabindex="0" id="cuisines-select" role="dropdown" name="cuisines" onchange="updateRestaurants()">
+        <label class="select-label">Select Neighborhood</label>
+        <select tabindex="0" id="cuisines-select" role="dropdown" name="cuisines" onchange="updateRestaurants()" title="Cuisine Dropdown Menu">
           <option value="all">All Cuisines</option>
         </select>
-        <div id="cuisinediv">
-        <label id="cuisines-select">Select Cuisine</label>
-        </div>
+        <label class="select-label"">Select Cuisine</label>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
