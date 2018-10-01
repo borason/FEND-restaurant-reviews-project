@@ -1,6 +1,5 @@
 # RESTAURANT REVIEWS
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
 
 ## ABOUT
 
