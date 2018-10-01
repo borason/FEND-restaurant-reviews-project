@@ -172,8 +172,9 @@ createReviewHTML = (review) => {
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
   li.appendChild(comments);
-  li.setAttribute('tabindex', '0');
+  li.setAttribute("tabindex", "0");
   li.setAttribute("aria-label", "review comment");
+  li.setAttribute("role", "article");
   return li;
 }
 
