@@ -17,18 +17,18 @@
     <!-- Beginning nav -->
     <nav>
       <h1><a href="/" aria-labelledby="Page Title" title="Home Page" id="site-title" role="link">Restaurant Reviews</a></h1>
-    </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" >
       <li><a href="/" aria-labelledby="Home" title="Home Page" role="link">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
+    </nav>
     <!-- End nav -->
   </header>
   <!-- End header -->
     <!-- Beginning map -->
       <!-- added application role in order to skip tab focus -->
-    <section id="map-container" role="application">
+    <section id="map-container" role="application" tabindex="-1">
       <div id="map">
       </div>
     </section>
@@ -38,7 +38,7 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h2 id="restaurant-name"></h2>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <div id="restaurant-info">
