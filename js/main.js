@@ -99,7 +99,7 @@ initMap = () => {
   }).addTo(newMap);
 
   updateRestaurants();
-  document.getElementById("map").setAttribute("tabindex", "-1");
+  // document.getElementById("map").setAttribute("tabindex", "-1");
 }
 /* window.initMap = () => {
   let loc = {
