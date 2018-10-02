@@ -12,22 +12,22 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/" aria-labelledby="Home" title="Home Page" id="site-title">Restaurant Reviews</a></h1>
+      <h1><a href="/" aria-labelledby="Home" title="Home Page" id="site-title" tabindex="1">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
-    <section id="map-container" role="application">
-      <div id="map" role="application"></div>
+    <section id="map-container">
+      <div id="map"></div>
     </section>
     <section id="filters">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select tabindex='0' id="neighborhoods-select" role="dropdown" name="neighborhoods" onchange="updateRestaurants()" title="Neighborhoods Dropdown Menu">
+        <select tabindex='2' id="neighborhoods-select" role="dropdown" name="neighborhoods" onchange="updateRestaurants()" title="Neighborhoods Dropdown Menu">
           <option value="all">All Neighborhoods</option>
         </select>
         <label class="select-label">Select Neighborhood</label>
-        <select tabindex="0" id="cuisines-select" role="dropdown" name="cuisines" onchange="updateRestaurants()" title="Cuisine Dropdown Menu">
+        <select tabindex="2" id="cuisines-select" role="dropdown" name="cuisines" onchange="updateRestaurants()" title="Cuisine Dropdown Menu">
           <option value="all">All Cuisines</option>
         </select>
         <label class="select-label"">Select Cuisine</label>
